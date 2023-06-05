@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <ImageView
+                android:id="@+id/user"
+                android:layout_width="400dp"
+                android:layout_height="250dp"
+                android:layout_below="@id/tvjudul"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="18dp"
+                android:src="@drawable/pila" />
+            <TextView
+                android:id="@+id/tvjudul"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15sp"
+                android:text="Biodata Pribadi"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+            <EditText
+                android:id="@+id/edNama"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/user"
+                android:layout_centerHorizontal="false"
+                android:layout_marginTop="20sp"
+                android:textColor="@color/black"
+                android:text="Nama   : Nofri Elfira Dahil" />
+
+            <EditText
+                android:id="@+id/tgl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/edNama"
+                android:layout_centerHorizontal="false"
+                android:textColor="@color/black"
+                android:text="Tanggal Lahir  : 22 November 2001" />
+
+            <EditText
+                android:id="@+id/tml"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tgl"
+                android:layout_centerHorizontal="false"
+                android:textColor="@color/black"
+                android:text="Tempat Lahir : Padang pariaman" />
+
+            <EditText
+                android:id="@+id/ag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tml"
+                android:layout_centerHorizontal="false"
+                android:textColor="@color/black"
+                android:text="Agama : Islam" />
+
+            <EditText
+                android:id="@+id/tmpt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ag"
+                android:layout_centerHorizontal="false"
+                android:textColor="@color/black"
+                android:text="Alamat : LubukALung" />
+
+            <EditText
+                android:id="@+id/jml"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tmpt"
+                android:layout_centerHorizontal="false"
+                android:textColor="@color/black"
+                android:text="Jumlah Bersaudara : 4" />
+
+            <EditText
+                android:id="@+id/sd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/jml"
+                android:layout_centerHorizontal="false"
+                android:textColor="@color/black"
+                android:text="SD : SDN 01 lubuk alung " />
+
+            <EditText
+                android:id="@+id/Smp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/sd"
+                android:layout_centerHorizontal="false"
+                android:textColor="@color/black"
+                android:text="SMP : SMPN 03 lubuk alung" />
+
+            <EditText
+                android:id="@+id/sma"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/Smp"
+                android:layout_centerHorizontal="false"
+                android:textColor="@color/black"
+                android:text="SMA :  SMk 01 Parit Malintang" />
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
